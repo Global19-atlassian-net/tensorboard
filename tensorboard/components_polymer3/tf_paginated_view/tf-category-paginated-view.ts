@@ -420,6 +420,7 @@ class TfCategoryPaginatedView<CategoryItem> extends TfDomRepeat<CategoryItem> {
     return compositeSearch && type === CategoryType.SEARCH_RESULTS;
   }
   ready() {
+    super.ready();
     this.opened = this.initialOpened == null ? true : this.initialOpened;
     this._limitListener = () => {
       this.set('_limit', getLimit());
