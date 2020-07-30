@@ -314,6 +314,7 @@ class VzLineChart2 extends LegacyElementMixin(PolymerElement) {
   private _makeChartAsyncCallbackId: number = null;
 
   ready() {
+    super.ready();
     this.scopeSubtree(this.$.chartdiv, true);
   }
 

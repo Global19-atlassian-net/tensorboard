@@ -65,6 +65,7 @@ export class VzChartTooltip extends LegacyElementMixin(PolymerElement) {
   _hideOnBlur: any;
 
   ready() {
+    super.ready();
     this._styleCache = null;
     this._raf = null;
     this._tunnel = null;
