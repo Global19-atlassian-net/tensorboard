@@ -17,13 +17,12 @@ import {computed, observe, customElement, property} from '@polymer/decorators';
 import '@polymer/iron-icons';
 import {PaperCheckboxElement} from '@polymer/paper-checkbox';
 import {PaperIconButtonElement} from '@polymer/paper-icon-button';
-import '@polymer/paper-input';
+import '@polymer/paper-input/paper-input';
 import {PolymerElement, html} from '@polymer/polymer';
 import * as _ from 'lodash';
 
 import './run-color-style';
 import './scrollbar-style';
-import './tf-color-scale';
 
 /*
 tf-multi-checkbox creates a list of checkboxes that can be used to toggle on or off
